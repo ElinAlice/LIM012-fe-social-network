@@ -7,9 +7,6 @@ export default () => {
 			<div class="logo-principal">
         <img src="./assets/logo-limatopia.png" />
       </div>
-      <button class="btnLogOut"> 
-      <p>Log Out</p>
-      </button>
 		</header>
 		<section class="All-sections">
     <section class="container-Publications-Profile">

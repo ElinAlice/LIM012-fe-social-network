@@ -20,7 +20,7 @@ const createNewPublication = (objectReceived) =>
 const getPublications = () =>
   db.collection("publications").orderBy("registrationDate", "desc");
 
-const getStorageRef = () => storageRef;
+const getStorageRef = () => storageRef();
 
 const updateNamePublication = (userId, newName) => {
   const query = db.collection("publications").where("userId", "==", userId);

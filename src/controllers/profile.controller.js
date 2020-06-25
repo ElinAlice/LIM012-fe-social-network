@@ -9,7 +9,7 @@ export default () => {
   const userPhoto = view.querySelector("#userPhoto");
   const background = view.querySelector("#background");
   const user = models.profileModel.getCurrentNameUser();
-  const btnLogOut = view.querySelector(".btnLogOut");
+  // const btnLogOut = view.querySelector(".btnLogOut");
 
   // QuerySnapshot es un obj de rspta de firebase, trae datos de ese user.uid
   if (user) {
@@ -30,9 +30,9 @@ export default () => {
     models.profileModel.signOut().then(() => (window.location.hash = "#/logIn"))
   );
 
-  btnLogOut.addEventListener("click", () =>
-    models.profileModel.signOut().then(() => (window.location.hash = "#/logIn"))
-  );
+  // btnLogOut.addEventListener("click", () =>
+  //   models.profileModel.signOut().then(() => (window.location.hash = "#/logIn"))
+  // );
 
   view = controllers.publicationController(view);
   return view;
