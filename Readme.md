@@ -1,22 +1,22 @@
+# Red Social - Bienvenida a Lima|topia
 <p align="center">
   <img src="https://storage.googleapis.com/md-links/titleBig.png">
 </p>
 
-# Red Social - Bienvenida a Lima|topia...
 ## 1. Resumen
 Se construyó una aplicación web, una red social, donde los usuarios pueden interactuar, compartiendo información, sobre eventos que se realizan en la ciudad de Lima capital del Perú. Esta aplicación permitirá el acceso a usuarios que inicien sesión, para administrar su perfil, compartir publicaciones, hacer comentarios, dar like a publicaciones de su preferencia.
 
 - Vista portada
 
-![portada]()
+![portada](https://github.com/ElinAlice/LIM012-fe-social-network/blob/master/src/assets/app/Login.PNG?raw=true)
 
 - Vista home 
 
-![home y publicaciones]()
+![home y publicaciones](https://github.com/ElinAlice/LIM012-fe-social-network/blob/master/src/assets/app/home.PNG?raw=true)
 
 - Vista Profile
 
-![Profile]()
+![Profile](https://github.com/ElinAlice/LIM012-fe-social-network/blob/master/src/assets/app/profile.PNG?raw=true)
 
 
 ## Arquitectura de la aplicación
@@ -72,78 +72,14 @@ local utilizando`localStorage`.
 
 ### 3.3 Autenticación y autorización
 
-Para esto utilizarás respectivamente
+* Para esto utilizarás respectivamente
 [`Firebase authentication`](https://firebase.google.com/docs/auth/) y
 [`Firestore security rules`](https://firebase.google.com/docs/firestore/security/get-started)
 
 ### 3.4 Creación de un database en Firebase
-* Para crear una nueva colección; utilizarás la siguiente documentación:
-[`Modelo de datos Clout Firestore `](https://firebase.google.com/docs/firestore/data-model?hl=es-419#collections)
-* Para agregar datos en una colección: 
-[`Agregar datos`](https://firebase.google.com/docs/firestore/manage-data/add-data?hl=es-419)
-* Para eliminar datos en una colección:
-[`Borrar datos`](https://firebase.google.com/docs/firestore/manage-data/delete-data?hl=es-419)
-* Para mostrar datos de una colección en tiempo real:
-[`Leer datos`](https://firebase.google.com/docs/firestore/query-data/listen?hl=es-419)
-* Para actualizar datos en una colección:
+* Para crear una nueva colección en Firebase, usamos el Cloud Firestorage, y realizar  tener interacción para  crear, mostrar, eliminar y actualizar; utilizarás la siguiente documentación:
+[`Modelo de datos Clout Firestore `](https://firebase.google.com/docs/firestore?hl=es-419)
 
-
-
-
-### Objetivos de aprendizajes pendientes
-
-
-### HTML y CSS
-
-* [ ] [HTML semántico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] [CSS `flexbox`](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
-
-### DOM y Web APIs
-
-* [ ] [Manipulación dinámica del DOM](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-* [ ] [History API](https://developer.mozilla.org/es/docs/DOM/Manipulando_el_historial_del_navegador)
-* [ ] [`localStorage`]
-
-### Javascript
-
-* [ ] [Uso de callbacks](https://developer.mozilla.org/es/docs/Glossary/Callback_function)
-* [ ] [Consumo de Promesas](https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises)
-* [ ] Uso ES modules
-([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-| [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-
-### Firebase
-
-* [ ] [Firestore](https://firebase.google.com/docs/firestore)
-* [ ] [Firebase Auth](https://firebase.google.com/docs/auth/web/start)
-* [ ] [Firebase security rules](https://firebase.google.com/docs/rules)
-* [ ] [Uso de onSnapshot](https://firebase.google.com/docs/firestore/query-data/listen)
-| [onAuthStateChanged](https://firebase.google.com/docs/auth/web/start#set_an_authentication_state_observer_and_get_user_data)
-
-### Testing
-
-* [ ] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
-* [ ] [Testeo asíncrono](https://jestjs.io/docs/es-ES/asynchronous)
-* [ ] [Mocking](https://jestjs.io/docs/es-ES/manual-mocks)
-
-### Colaboración en Github
-
-* [ ] Branches
-* [ ] Pull Requests
-* [ ] Tags
-
-### Organización en Github
-
-* [ ] Projects
-* [ ] Issues
-* [ ] Labels
-* [ ] Milestones
-
-### Buenas prácticas de desarrollo
-
-* [ ] Modularización
-* [ ] Nomenclatura / Semántica
-* [ ] Linting
-
-***
+### 3.5 Subir en Firebase
+* Neceitamos que la aplicación pueda subir y cargar archivos, por eso necesitaremos la funcionalidad del Storage de Firebase, donde se almacen los archivos; utilizaremos la siguiente documentación: 
+[`Clout Cloud Storage`](https://firebase.google.com/docs/storage?hl=es-419)
