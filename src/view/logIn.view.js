@@ -15,7 +15,6 @@ export default () => {
         <section id="containerLogIn">
           <h1>Log In</h1>
           <section class="sectionSubTitle">
-            <h2 class="LogIn">Log in</h2>
             <a href="#/recovery-pass">Olvidé mi contraseña?</a>
           </section>
           <form class="container" id="logInForm">
